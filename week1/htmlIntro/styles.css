@@ -1,0 +1,28 @@
+/* 
+    CÓDIGO DRY
+    DONT
+    REPEAT 
+    YOURSELF
+*/
+
+/* 
+    Crear formulario con todos los campos requeridos y validación para contraseña con número
+    letra y carácter especial, máximo de carácteres 6 
+*/
+
+.container h1 {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+}
+
+.titles {
+    color: red;
+}
+
+.form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
