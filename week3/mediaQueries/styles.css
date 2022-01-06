@@ -1,0 +1,91 @@
+.container {
+    margin: 5% auto;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    background-color: aqua;
+}
+
+img {
+    width: 500px;
+}
+
+.imageMobile {
+    display: none;
+}
+
+.imageMobileLast {
+    display: none;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    .container {
+        background-color: blueviolet;
+    }
+
+    h1 {
+        color: greenyellow;
+        font-size: 52px;
+        text-align: center;
+    }
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        background-color: palevioletred;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    h1 {
+        color: blueviolet;
+        font-size: 30px;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        display: flex;
+    }
+
+    .imageDesktop {
+        display: none;
+    }
+
+    .imageMobile {
+        display: flex;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageMobileLast {
+        display: flex;
+    }
+}
